@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            position: relative;
+            font-size: 14vw;
+            -webkit-text-stroke: 0.3vw #111;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100px;
+        }
+
+        h2::before {
+            content: attr(data-text);
+            left: 0;
+            top: 0;
+            margin: 0 auto;
+            position: absolute;
+            -webkit-text-stroke: 0 #111;
+            width: 0;
+            height: 100%;
+            color: #01fe87;
+            border-right: 2px solid #01fe87;
+            overflow: hidden;
+            animation: anim 5s linear infinite;
+        }
+
+        @keyframes anim {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        h2:hover {
+            box-shadow: 0px 25px 50px #01fe87;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 data-text="Md.Fahmid">
+        Md.Fahmid
+    </h2>
+</body>
+
+</html>

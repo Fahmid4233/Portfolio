@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section{
+    background: #162329;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    min-height: 400px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.box{
+    position:relative;
+    z-index: 1000;
+}
+#daycalendar{
+    width: 100%;
+    padding: 20px;
+}
+#dycalendar table td{
+    color:#fff;
+    padding: 10px;
+    cursor: pointer;
+}
+#dycalendar table tr:nth-child(1) td{
+    background-color: #fff;
+    color: #161623;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+#dycalendar table{
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 8px;
+}
+#dycalendar table td:hover{
+    background-color: orange;
+    color:black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date{
+    background-color: orange;
+    color:black !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.dycalendar-month-container .dycalendar-header
+.dycalendar-prev-next-btn.prev-btn{
+    background-color: #fff;
+    color:black;
+    height:38px;
+    width:44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.dycalendar-month-container .dycalendar-header
+.dycalendar-prev-next-btn.next-btn{
+    background-color: #fff;
+    color:black;
+    height:38px;
+    width:44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.dycalendar-month-container .dycalendar-span-month-year{
+    color: #eee;
+    font-size: 1.5em;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#time{
+    border-radius: 10px;
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    color: #eee;
+}
+#cal{
+    border-radius: 10px;
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 120px;
+    color: #eee;
+    padding-top: 10px;
+}
